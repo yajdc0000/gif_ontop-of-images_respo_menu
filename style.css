@@ -1,0 +1,166 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+nav{
+height: 100%;
+width:100%;
+line-height: 70px;
+height:auto;
+min-height: 70px;
+border-bottom: 1px solid;
+}
+
+.label-toggle{
+    font-size: 1.5rem;
+    display: none;
+}
+
+#toggle{
+    display:none;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+    font-size: 1.5rem;
+}
+
+.menu a:hover{
+    color: black;
+    font-weight: 590;
+    text-decoration: underline;
+}
+
+span{
+    color: green;
+}
+
+.portfolio{
+    margin-top:5px;
+    position: relative;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-template-rows: 200px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.product1{
+    position: relative;
+    height:200px;
+    width:200px;
+}
+.product1 .img-top1{
+    display:none;
+}
+
+.product1:hover .img-top1{
+    display: block;
+    vertical-align: middle;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.product2{
+    position: relative;
+    height:200px;
+    width:200px;
+}
+.product2 .img-top2{
+    display:none;
+}
+
+.product2:hover .img-top2{
+    display: block;
+    vertical-align: middle;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.product3{
+    position: relative;
+    height:200px;
+    width:200px;
+}
+.product3 .img-top3{
+    display:none;
+}
+
+.product3:hover .img-top3{
+    display: block;
+    vertical-align: middle;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+h3{
+    text-align:center;
+}
+
+
+@media only screen and (max-width: 500px){
+    .label-toggle{
+        display: block;
+        float:right;
+        cursor:pointer;
+    }
+    .menu{
+        text-align: center;
+        display: none;
+    }
+    .menu a{
+        clear:right;
+        display:block;
+        border-top: 1px solid;
+    }
+    
+    #toggle:checked + .menu{
+         display:block;    
+    }
+    .portfolio{
+        width:100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;   
+    }
+    .product1{
+        margin: 3px auto;
+    }
+    .product2{
+        margin: 3px auto;
+    }
+    .product3{
+        margin: 3px auto;
+    }
+}
